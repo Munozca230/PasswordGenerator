@@ -1,0 +1,78 @@
+.title-text {
+   -fx-font-size: 22px;
+   -fx-fill: #F0F0F0;
+   -fx-font-weight: bold;
+}
+
+.check-box {
+   -fx-background-color: #F0F0F0;
+   -fx-background-radius: 8;
+   -fx-background-insets: 0 8 0 0, 1 8 1 8;
+   -fx-background-color: linear-gradient(to bottom, derive(#E0E0E0,30%) 0%, derive(#E0E0E0,-30%) 100%);
+   -fx-text-fill: #333;
+   -fx-padding: 6 18 6 12;
+   -fx-font-size: 12px;
+   -fx-font-weight: bold;
+}
+
+.check-box:selected {
+   -fx-background-color: #333;
+   -fx-text-fill: #F0F0F0;
+}
+
+.check-box .box {
+   -fx-background-color: #333;
+   -fx-background-radius: 4;
+   -fx-background-insets: 0 0 0 0;
+   -fx-background-color: linear-gradient(to bottom, derive(#333,60%) 0%, derive(#333,-60%) 100%);
+   -fx-min-width: 24;
+   -fx-min-height: 24;
+   -fx-max-width: 24;
+   -fx-max-height: 24;
+}
+
+.check-box:selected .box {
+   -fx-background-color: #F0F0F0;
+}
+
+.pane-text {
+   -fx-background-color: #232323;
+}
+
+.copy-button {
+  -fx-background-color: #CCCCCC;
+  -fx-text-fill: #333333;
+  -fx-padding: 5px 5px;
+  -fx-border-radius: 3px;
+  -fx-border-color: transparent;
+  -fx-graphic: url("./img/copy.png");
+  -fx-background-size: contain;
+  -fx-background-repeat: no-repeat;
+}
+
+.copy-button:hover {
+  -fx-background-color: #BBBBBB;
+}
+
+.copy-button:pressed {
+  -fx-background-color: #999999;
+}
+
+.generate-button {
+-fx-background-color: #CCCCCC;
+  -fx-text-fill: #333333;
+  -fx-padding: 5px 5px;
+  -fx-border-radius: 3px;
+  -fx-border-color: transparent;
+  -fx-graphic: url("./img/circulo.png");
+  -fx-background-size: contain;
+  -fx-background-repeat: no-repeat;
+}
+
+.generate-button:hover {
+  -fx-background-color: #BBBBBB;
+}
+
+.generate-button:pressed {
+  -fx-background-color: #999999;
+}

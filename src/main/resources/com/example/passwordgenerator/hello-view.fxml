@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="259.0" prefWidth="479.0" spacing="20.0" style="-fx-background-color: #424242;" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.passwordgenerator.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane prefHeight="318.0" prefWidth="431.0" style="-fx-background-color: #383838;">
+         <children>
+            <Text layoutX="114.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="Password-Generator" />
+            <CheckBox fx:id="checkBoxUppercase" layoutX="14.0" layoutY="52.0" mnemonicParsing="false" selected="true" styleClass="check-box" text="Uppercase" textFill="WHITE" />
+            <CheckBox fx:id="checkBoxLowercase" layoutX="124.0" layoutY="52.0" mnemonicParsing="false" selected="true" styleClass="check-box" text="Lowercase" textFill="WHITE" />
+            <CheckBox fx:id="checkBoxNumbers" layoutX="233.0" layoutY="52.0" mnemonicParsing="false" selected="true" styleClass="check-box" text="Numbers" textFill="WHITE" />
+            <CheckBox fx:id="checkBoxSymbols" layoutX="336.0" layoutY="52.0" mnemonicParsing="false" selected="true" styleClass="check-box" text="Symbols" textFill="WHITE" />
+            <Pane layoutX="13.0" layoutY="164.0" prefHeight="36.0" prefWidth="346.0" styleClass="pane-text">
+               <children>
+                  <Text fx:id="generatedPassword" fill="#eeeeee" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="CENTER" wrappingWidth="303.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Slider fx:id="slider" blockIncrement="2.0" layoutX="146.0" layoutY="107.0" max="30.0" min="1.0" prefHeight="32.0" prefWidth="226.0" value="15.0" />
+            <Text fx:id="sliderValue" fill="WHITE" layoutX="387.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="generateButton" layoutX="378.0" layoutY="163.0" mnemonicParsing="false" onAction="#onGenerateButtonClick" prefHeight="36.0" prefWidth="43.0" styleClass="generate-button" />
+            <Button layoutX="317.0" layoutY="163.0" mnemonicParsing="false" prefHeight="36.0" onAction="#onCopyButtonClick" prefWidth="43.0" styleClass="copy-button" />
+            <Text fill="WHITE" layoutX="18.0" layoutY="129.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="password length" wrappingWidth="127.720703125">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children></Pane>
+   </children>
+</VBox>
